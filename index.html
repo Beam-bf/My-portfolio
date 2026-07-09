@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beamlak | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F5F5DC; color: #5D6D7E; scroll-behavior: smooth; }
+        .bg-sage { background-color: #8A9A5B; }
+        .text-sage { color: #8A9A5B; }
+        .bg-terra { background-color: #E2725B; }
+        .text-terra { color: #E2725B; }
+        .card { background: #FFFFFF; border: 1px solid #D2B48C; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .skill-pill { background: #FDF5E6; border: 1px solid #D2B48C; color: #8A9A5B; }
+        .btn-nav { transition: all 0.2s ease; }
+        .btn-nav:hover { background-color: #E2725B; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#F5F5DC]/90 backdrop-blur-sm border-b border-[#D2B48C] py-4">
+        <div class="max-w-5xl mx-auto flex justify-center gap-4 px-6">
+            <a href="#about" class="btn-nav px-4 py-2 rounded-full font-bold text-[#5D6D7E]">About Me</a>
+            <a href="#projects" class="btn-nav px-4 py-2 rounded-full font-bold text-[#5D6D7E]">Projects</a>
+            <a href="#contact" class="btn-nav px-4 py-2 rounded-full font-bold text-[#5D6D7E]">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header class="py-32 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <h1 class="text-6xl font-extrabold text-[#5D6D7E] leading-tight">Hi, I'm <span class="text-sage">Beamlak</span></h1>
+            <p class="text-xl">Engineering student & Fashion Data enthusiast. Bridging the gap between hardware signals and e-commerce analytics.</p>
+        </div>
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden border-4 border-[#D2B48C] shadow-2xl">
+            <img src="mypic.jpg" alt="Beamlak" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/D2B48C/FFFFFF?text=Beamlak'">
+        </div>
+    </header>
+
+    <!-- About Me Section (Skills Focused) -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-[#5D6D7E] mb-10 text-center">About Me & My Skills</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Proficient Skills -->
+            <div class="card p-8 rounded-3xl">
+                <h3 class="font-bold text-sage mb-4 text-xl"><i class="fa-solid fa-code mr-2"></i> Proficient</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold">Python</span>
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold">C++</span>
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold">JavaScript</span>
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold">Front-End Dev</span>
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold">Back-End Dev</span>
+                </div>
+            </div>
+            
+            <!-- Learning Skills -->
+            <div class="card p-8 rounded-3xl border-terra">
+                <h3 class="font-bold text-terra mb-4 text-xl"><i class="fa-solid fa-graduation-cap mr-2"></i> Learning & Analytics</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold italic text-terra">Data Analytics</span>
+                    <span class="skill-pill px-4 py-2 rounded-lg font-semibold italic text-terra">Artificial Intelligence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-[#5D6D7E] mb-12 text-center">Interactive Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-3xl flex flex-col justify-between">
+                <div><h3 class="text-xl font-bold text-sage mb-2">Human Hair Marketplace</h3><p class="text-sm mb-4">Inventory platform for hair textiles.</p></div>
+                <a href="https://my-human-hair-site-y61c.vercel.app/" target="_blank" class="text-terra font-semibold hover:underline">View Site <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="card p-6 rounded-3xl flex flex-col justify-between">
+                <div><h3 class="text-xl font-bold text-sage mb-2">Budget & Ledger</h3><p class="text-sm mb-4">Data storage for costs and supplies.</p></div>
+                <a href="https://budgetledger.vercel.app/" target="_blank" class="text-terra font-semibold hover:underline">View Site <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="card p-6 rounded-3xl flex flex-col justify-between border-sage">
+                <div><h3 class="text-xl font-bold text-sage mb-2">Water Quality Checker</h3><p class="text-sm mb-4 text-gray-500 italic">Completed: Terminal Application</p></div>
+            </div>
+            <div class="card p-6 rounded-3xl flex flex-col justify-between border-sage">
+                <div><h3 class="text-xl font-bold text-sage mb-2">Password Manager</h3><p class="text-sm mb-4 text-gray-500 italic">Completed: Terminal Application</p></div>
+            </div>
+            <div class="card p-6 rounded-3xl flex flex-col justify-between border-terra">
+                <div><h3 class="text-xl font-bold text-terra mb-2">Shevara Beauty</h3><p class="text-sm mb-4 text-gray-500 italic">Ongoing Development</p></div>
+            </div>
+            <div class="card p-6 rounded-3xl flex flex-col justify-between border-terra">
+                <div><h3 class="text-xl font-bold text-terra mb-2">Koket Hotel & Pension</h3><p class="text-sm mb-4 text-gray-500 italic">Ongoing Development</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <section id="contact" class="py-20 text-center">
+        <h2 class="text-2xl font-bold text-[#5D6D7E] mb-6">Let's Connect</h2>
+        <p class="mb-6">Always open to new collaborations!</p>
+        <div class="flex justify-center gap-4">
+            <a href="mailto:beamlakfisehabf@gmail.com" class="flex items-center gap-3 px-6 py-3 bg-white rounded-xl border border-[#D2B48C] hover:bg-[#FDF5E6] font-bold">
+                <i class="fa-solid fa-envelope text-terra"></i> Email Me
+            </a>
+            <a href="https://wa.me/971568316082" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-white rounded-xl border border-[#D2B48C] hover:bg-[#FDF5E6] font-bold">
+                <i class="fa-brands fa-whatsapp text-sage"></i> WhatsApp
+            </a>
+        </div>
+    </section>
+</body>
+</html>
